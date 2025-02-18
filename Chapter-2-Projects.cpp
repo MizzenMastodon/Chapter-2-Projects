@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-	const float RISE_RATE = 1.5;
+  int polledCustomers = 16500;
+  int percentPurchased = polledCustomers * 0.15; 
+  int percentCitrus = percentPurchased * 0.58; //percentage of citrus purchasing customers
 
-	cout << "After 5 years, the ocean will rise by " << 5 * RISE_RATE << " mm \n";
-	cout << "After 7 years, the ocean will rise by " << 7 * RISE_RATE << " mm \n";
-	cout << "After 10 years, the ocean will rise by " << 10 * RISE_RATE << " mm";
+  cout << "Out of " << polledCustomers << " polled customers, " << percentPurchased << " purchased one or more energy drinks per week. " << percentCitrus << " of those customers purchased citrus-flavored energy drinks. "; 
 }
