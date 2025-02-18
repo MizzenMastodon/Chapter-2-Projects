@@ -4,9 +4,12 @@ using namespace std;
 
 int main()
 {
-	const float RISE_RATE = 1.5;
+    int GasTank = 20;
+    float TownMpg = 23.5;
+    float HighwayMpg = 28.9;
+    float TownDistance = GasTank * TownMpg;
+    float HighwayDistance = GasTank * HighwayMpg;
 
-	cout << "After 5 years, the ocean will rise by " << 5 * RISE_RATE << " mm \n";
-	cout << "After 7 years, the ocean will rise by " << 7 * RISE_RATE << " mm \n";
-	cout << "After 10 years, the ocean will rise by " << 10 * RISE_RATE << " mm";
+    cout << "In town, " << TownDistance << " miles can be travelled on a full tank. \n";
+    cout << "On the highway, " << HighwayDistance << " miles can be travelled on a full tank.";
 }
